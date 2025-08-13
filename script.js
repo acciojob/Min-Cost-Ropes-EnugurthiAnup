@@ -4,7 +4,7 @@ function mincost(arr)
 	
 	arr.sort((a,b)=> a-b )
 	let sum=0
-	for (let i = 1; i < arr.length; i++) {
+	while(arr.length>1) {
 		let sum = arr[i] + arr[i-1]
 		
 		arr.splice(0,2)
