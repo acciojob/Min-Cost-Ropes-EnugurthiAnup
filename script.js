@@ -5,7 +5,10 @@ function mincost(arr)
 	arr.sort((a,b)=>{a-b})
 	let sum=0
 	for (let i = 1; i < arr.length; i++) {
-		sum = sum + arr[i] + arr[i-1]
+		sum = arr[i] + arr[i-1]
+		arr.push(sum)
+		arr.sort((a,b)=>{a-b})
+		
 		
 	}
 	return sum
