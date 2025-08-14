@@ -8,11 +8,9 @@ function mincost(arr)
 	   let cost = arr[0] + arr[1];
 		sum =  sum + cost
 		arr.splice(0,2)
-		arr.push(sum)
-		arr.sort((a,b)=> a-b )
-		
-		
-	}
+		arr.push(cost)
+		arr.sort((a,b)=> a-b ) 
+}
 	return sum
 // return the min cost
    
